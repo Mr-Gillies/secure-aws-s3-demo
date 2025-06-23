@@ -1,39 +1,33 @@
 # Secure AWS S3 Bucket with Terraform
 
-This project demonstrates how to provision a **secure, private AWS S3 bucket** using [Terraform](https://www.terraform.io/). It's my first step into Infrastructure as Code (IaC) and cloud security.
+This is one of my first projects using Terraform. I wanted to learn how to create a secure S3 bucket on AWS using infrastructure as code, and this was a great place to start.
 
-## 🛠 What It Does
+## What I Learned
 
-- Creates an S3 bucket with a unique name
-- Blocks **all public access**
-- Applies tags for easy identification
-- Enables **server-side encryption**
-- Cleaned up with `terraform destroy` to avoid charges
+- How to use Terraform to build cloud infrastructure
+- How to secure an S3 bucket by blocking public access and enabling encryption
+- How to structure and clean up a Terraform project
+- How to push a proper project to GitHub without uploading unnecessary files
 
-## 🔒 Why It Matters
+## What This Project Does
 
-Security is a critical part of working in the cloud. This project shows how to:
-- Use IaC to deploy consistent and repeatable cloud infrastructure
-- Secure cloud storage by default
-- Avoid misconfigurations that can lead to data breaches
+- Creates an AWS S3 bucket with a unique name
+- Blocks all public access
+- Enables server-side encryption
+- Adds basic tags for identification
+- Cleans up everything with `terraform destroy` to avoid unnecessary charges
 
-## 🧪 Tools Used
+## Tools Used
 
-- [Terraform v1.12.2](https://www.terraform.io/)
+- Terraform
 - AWS S3
 - Visual Studio Code
 
-## 💡 What I Learned
+## How to Use
 
-- Basics of Terraform syntax and commands (`init`, `plan`, `apply`, `destroy`)
-- How to secure S3 buckets
-- How to structure a simple infrastructure project and commit it to GitHub
-
-## 🚀 How to Use
-
-1. Clone this repo  
-2. Set up your AWS credentials  
-3. Run:
+1. Clone the repo
+2. Set up your AWS credentials
+3. Run the following commands:
    ```bash
    terraform init
    terraform plan
